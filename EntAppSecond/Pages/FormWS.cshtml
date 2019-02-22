@@ -1,0 +1,54 @@
+﻿@page
+@model EntAppSecond.Pages.FormWSModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormWS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <form method="post">
+
+        <label for="product">Product Code</label>
+       
+        <div class="radio active">
+            <label>
+                <input asp-for="Radio1" type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Red
+            </label>
+        </div>
+
+        <div class="radio active">
+            <label>
+                <input asp-for="Radio2" type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Yellow
+            </label>
+        </div>
+
+        <div class="radio active">
+            <label>
+                <input asp-for="Radio3" type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> Black
+            </label>
+        </div>
+
+        <label class="checkbox active">
+            <input type="checkbox" id="Checkbox1" value="option1"> I consent to everything
+        </label>
+
+        <div class="btn-group btn-group-lg">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
